@@ -1,0 +1,87 @@
+{
+  "navigation": [
+    {
+      "icon": "ri-dashboard-line",
+      "route": "/",
+      "label": "dashboard"
+    },
+    {
+      "icon": "ri-auction-fill",
+      "route": "/live-auctions",
+      "label": "all live auctions"
+    },
+    {
+      "icon": "ri-store-2-line",
+      "route": "/all-vendors",
+      "label": "all vendors"
+    },
+    {
+      "icon": "ri-calculator-line",
+      "label": "calculate commission",
+      "children": [
+        {
+          "icon": "ri-user-add-line",
+          "route": "/calculate-commission/vendor-enrollment",
+          "label": "Vendor Enrollment"
+        },
+        {
+          "icon": "ri-user-smile-line",
+          "route": "/calculate-commission/bidder-enrollment",
+          "label": "Bidder Enrollment"
+        },
+        {
+          "icon": "ri-trophy-line",
+          "route": "/calculate-commission/successful-auctions",
+          "label": "Successful Auctions"
+        }
+      ]
+    },
+    {
+      "icon": "ri-error-warning-line",
+      "route": "/complaints-cancellation",
+      "label": "complaints/cancellation"
+    }
+  ],
+  "stats": [
+    {
+      "icon": "ri-shopping-bag-line",
+      "title": "No of Auction Product",
+      "value": "20"
+    },
+    {
+      "icon": "ri-award-line",
+      "title": "No of Successful Auction",
+      "value": "30"
+    },
+    {
+      "icon": "ri-money-dollar-circle-line",
+      "title": "Value of auction sale",
+      "value": "20,00,000 INR"
+    },
+    {
+      "icon": "ri-timer-line",
+      "title": "Balance no of auction",
+      "value": "20"
+    },
+    {
+      "icon": "ri-bar-chart-line",
+      "title": "Monthly Revenue",
+      "value": "5,00,000 INR"
+    },
+    {
+      "icon": "ri-user-star-line",
+      "title": "Top Vendor",
+      "value": "Vendor XYZ"
+    },
+    {
+      "icon": "ri-wallet-line",
+      "title": "Pending Payments",
+      "value": "1,50,000 INR"
+    },
+    {
+      "icon": "ri-flag-line",
+      "title": "Upcoming Auctions",
+      "value": "12"
+    }
+  ]
+}
