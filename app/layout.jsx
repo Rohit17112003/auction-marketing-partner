@@ -5,7 +5,7 @@ import "remixicon/fonts/remixicon.css";
 const urbanist = Urbanist({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "auction marketing partner",
+  title: "Auction-marketing-partner",
   description: "Less Price Top Bidder",
 };
 
