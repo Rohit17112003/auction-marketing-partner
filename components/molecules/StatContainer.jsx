@@ -1,15 +1,7 @@
 const StatContainer = ({ index, icon, title, value }) => {
   return (
     <div
-      className={` space-y-1 rounded-lg p-3 font-poppins ${
-        index < 4
-          ? index % 2 === 0
-            ? "bg-yellow"
-            : "bg-gray"
-          : index % 2 === 0
-            ? "bg-gray"
-            : "bg-yellow"
-      }`}
+      className={` space-y-1 rounded-lg p-3 font-poppins ${index % 2 === 0 ?  "bg-yellow" : "bg-gray" }`}
     >
       <h2 className="flex items-center gap-3">
         <i className={`${icon} ri-2x font-extralight text-darkyellow`}></i>
