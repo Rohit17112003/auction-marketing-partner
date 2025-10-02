@@ -3,7 +3,7 @@ import LiveAuctionCard from "@/components/molecules/LiveAuctionCard";
 
 const LiveAuctions = () => {
   return (
-    <section className="space-y-5">
+    <section className="space-y-8">
       <BannerContainer
         style="bg-lightyellow "
         title="Live Auctions"

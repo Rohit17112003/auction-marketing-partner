@@ -43,7 +43,7 @@ const AllVendors = () => {
         {data.map(({image,name,phone,email},index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-xl bg-light p-2 text-center "
+            className="flex flex-col items-center rounded-xl bg-[#F3F3F3] p-2 text-center "
           >
             <Image
               src={image}
