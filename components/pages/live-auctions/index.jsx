@@ -1,16 +1,10 @@
-import BannerContainer from "@/components/molecules/BannerContainer";
 import LiveAuctionCard from "@/components/molecules/LiveAuctionCard";
+import BannerButton from "@/components/atoms/BannerButton";
 
 const LiveAuctions = () => {
   return (
     <section className="space-y-8">
-      <BannerContainer
-        style="bg-lightyellow "
-        title="Live Auctions"
-        description="Add, edit and view product information"
-        image="/image/doctor.svg"
-        url="/live-auctions/add"
-      />
+    <BannerButton route={"/"} label="All Live auction" />
       <div className="grid gap-10 lg:grid-cols-2">
         {auctions.map((auction, index) => (
           <LiveAuctionCard key={index} {...auction} />

@@ -47,7 +47,7 @@ const DashboardLink = ({
                   isSubMenOpen
                     ? "ri-arrow-down-s-line"
                     : "ri-arrow-right-s-line"
-                } ri-lg`}
+                } ri-sm`}
               ></i>
             </span>
           )}
@@ -63,7 +63,7 @@ const DashboardLink = ({
               className="ms-4 flex w-[85%] flex-row items-center rounded-md px-3 py-2.5 text-[#4D525F] transition-all duration-200 hover:bg-[#0078D417]/40 hover:text-[#0078D4]/70"
             >
               <span>
-                <i className={`${item.icon} ri-lg`}></i>
+                <i className={`${item.icon} ri-sm`}></i>
               </span>
               <span className="text-sm font-medium capitalize">
                 {item.label}

@@ -1,7 +1,6 @@
 "use client";
 import BannerButton from "@/components/atoms/BannerButton";
 import SearchBar from "@/components/molecules/Search";
-import Button from "@/components/atoms/Button";
 
 const VendorEnrollment = () => {
   const data = [
@@ -96,7 +95,6 @@ const VendorEnrollment = () => {
           </table>
         </div>
       </section>
-
     </>
   );
 };
