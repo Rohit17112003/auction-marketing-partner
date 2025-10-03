@@ -1,11 +1,26 @@
 "use client";
-import BannerButton from "@/components/atoms/BannerButton";
 import Link from "next/link";
 
 const ComplaintsCancellation = () => {
   return (
     <>
-      <BannerButton route={"/"} label="Complaints/Cancellation" />
+       <div className="bg-lightyellow text-light flex items-center justify-between gap-2 rounded-xl px-3 py-3 font-poppins tracking-wide">
+        <div className="flex w-full items-center gap-3">
+          <Link href="/">
+            <i className="ri-arrow-left-line ri-lg"></i>
+          </Link>
+          <span className="text-xl font-medium">
+          Complaints/Cancellation
+          </span>
+        </div>
+        <div className="flex gap-4">
+         <Link href="/complaints-cancellation/add-complaints">
+           <button className="flex cursor-pointer items-center justify-center text-nowrap gap-1 rounded bg-[#F13E3E] px-3 py-2 text-sm md:px-4 md:text-lg font-poppins font-medium">
+             <i className="ri-add-fill font-semibold"></i> Add Complaint
+          </button>
+         </Link>
+        </div>
+      </div>
       <section className="bg-light mt-6 w-full rounded-xl shadow">
         <div className="mb-10 max-w-full overflow-x-auto px-4 pt-5">
           <table className="text-text font-nunito w-[1000px] border-collapse text-[1rem] md:w-full">
@@ -46,7 +61,9 @@ const ComplaintsCancellation = () => {
                     <td className="px-4 py-2 text-[0.85rem] font-medium">
                       {complaint}
                     </td>
-                    <td className="px-4 py-2 font-medium"> <span
+                    <td className="px-4 py-2 font-medium">
+                      {" "}
+                      <span
                         className={`i w-[90%] rounded px-4 flex justify-center items-center py-1 text-sm font-medium capitalize ${
                           status === "Resolved"
                             ? "bg-[#00B69B]/15 text-[#00B69B]"
@@ -54,7 +71,8 @@ const ComplaintsCancellation = () => {
                         }`}
                       >
                         {status}
-                      </span></td>
+                      </span>
+                    </td>
                   </tr>
                 ),
               )}
