@@ -46,7 +46,15 @@ const ComplaintsCancellation = () => {
                     <td className="px-4 py-2 text-[0.85rem] font-medium">
                       {complaint}
                     </td>
-                    <td className="px-4 py-2 font-medium">{status}</td>
+                    <td className="px-4 py-2 font-medium"> <span
+                        className={`i w-[90%] rounded px-4 flex justify-center items-center py-1 text-sm font-medium capitalize ${
+                          status === "Resolved"
+                            ? "bg-[#00B69B]/15 text-[#00B69B]"
+                            : "bg-[#E7B010]/15 text-[#E7B010]"
+                        }`}
+                      >
+                        {status}
+                      </span></td>
                   </tr>
                 ),
               )}
@@ -86,6 +94,6 @@ const data = [
     date: "28 May 2019",
     complaint:
       "Email link covering the following details Name, Id, Collection date, Code, Feedback, Discount Coupons, Match the offer",
-    status: "Resolved",
+    status: "Pending",
   },
 ];
