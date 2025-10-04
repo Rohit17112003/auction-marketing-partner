@@ -60,12 +60,12 @@ const DashboardLink = ({
             <Link
               key={index}
               href={item.route}
-              className="ms-4 flex w-[85%] flex-row items-center rounded-md px-3 py-2.5 text-[#4D525F] transition-all duration-200 hover:bg-[#0078D417]/40 hover:text-[#0078D4]/70"
+              className="ms-4 flex gap-0.5 w-[85%] flex-row items-center rounded-md px-3 py-2.5 text-[#4D525F] transition-all duration-200 hover:bg-[#0078D417]/40 hover:text-[#0078D4]/70"
             >
               <span>
-                <i className={`${item.icon} ri-sm`}></i>
+                <i className={`${item.icon} ri-lg`}></i>
               </span>
-              <span className="text-sm font-medium capitalize">
+              <span className="text-[1rem] font-medium capitalize">
                 {item.label}
               </span>
             </Link>

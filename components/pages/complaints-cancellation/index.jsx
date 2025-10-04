@@ -26,12 +26,12 @@ const ComplaintsCancellation = () => {
           <table className="text-text font-nunito w-[1000px] border-collapse text-[1rem] md:w-full">
             <thead className="bg-[#F7DD90] font-semibold">
               <tr>
-                <th className="px-4 py-4 text-start">Auction ID</th>
+                <th className="px-4 py-4 text-start rounded-l-xl">Auction ID</th>
                 <th className="px-4 py-4 text-start">Bidder/Vendor</th>
                 <th className="px-4 py-4 text-start">Email ID</th>
                 <th className="px-4 py-4 text-start">Date</th>
                 <th className="px-4 py-4 text-start">Complaint</th>
-                <th className="px-4 py-4 text-start">Status</th>
+                <th className="px-4 py-4 text-start rounded-r-xl">Status</th>
               </tr>
             </thead>
             <tbody>
